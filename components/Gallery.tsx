@@ -6,12 +6,10 @@ import { useEffect, useRef, useState } from "react";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 
 const galleryImages = [
-	"https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-	"https://images.unsplash.com/photo-1510531704581-5b2870972060?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-	"https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-	"https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-	"https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-	"https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+	"https://res.cloudinary.com/dxoorukfj/image/upload/v1783709016/2_yu5ajy.png",
+	"https://res.cloudinary.com/dxoorukfj/image/upload/v1783708570/Untitled_design_8_yvyyd5.png",
+	"https://res.cloudinary.com/dxoorukfj/image/upload/v1783708569/image1_a2kc4y.png",
+	"https://res.cloudinary.com/dxoorukfj/image/upload/v1783708569/image4_kpyjcj.jpg",
 ];
 
 export default function Gallery() {
@@ -136,22 +134,6 @@ export default function Gallery() {
 										/>
 									</button>
 								))}
-						</div>
-
-						{/* View Gallery Link */}
-						<div className="flex justify-center">
-							<button
-								type="button"
-								onClick={() => setLightboxImageIndex(0)}
-								className="flex items-center gap-1.5 text-[#0D4D55] font-sans text-[15px] font-medium border-b border-[#E0672A] pb-0.5"
-							>
-								View Gallery{" "}
-								<ChevronRight
-									size={16}
-									className="text-[#E0672A]"
-									strokeWidth={2.5}
-								/>
-							</button>
 						</div>
 					</div>
 

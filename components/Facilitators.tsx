@@ -70,9 +70,7 @@ export default function Convener() {
 						<div className="mb-6 h-[2px] w-12 bg-[#E0672A] hidden lg:block" />
 
 						<h2 className="font-serif text-[32px] leading-[1.1] text-[#FAF8F3] md:text-[4.5rem]">
-							Meet
-							<br />
-							Nkechi Ken-Nkwonta.
+							Meet Nkechi Ken Nkwonta
 						</h2>
 
 						{/* Decorative line with leaf */}
@@ -83,35 +81,26 @@ export default function Convener() {
 						</div>
 
 						<div className="space-y-4 md:space-y-6 text-[14px] md:text-[15px] lg:text-[17px] leading-[1.6] md:leading-[1.75] text-[#D8E0E2]">
+							<p className="font-semibold text-[#E0672A] mb-1">
+								AKA Structure Queen
+							</p>
 							<p>
-								With over a decade of experience in leadership development and
-								organizational psychology, Nkechi Ken-Nkwonta has dedicated her
-								career to transforming the way leaders think, communicate, and
-								inspire.
+								Nkechi Ken-Nkwonta, widely known as the Structure Queen, is a
+								distinguished leadership strategist and institutional architect
+								with over 17 years of building and managing organisations with
+								intentional structure and strategic foresight. Her leadership
+								journey has been defined by a deep commitment to governance,
+								policy development, operational excellence, and sustainable
+								growth. She is widely respected for positioning structure not as
+								bureaucracy, but as the strategic framework that protects vision
+								and secures longevity.
 							</p>
 
-							{/* Desktop visible paragraphs */}
-							<div className="hidden md:block space-y-6">
-								<p>
-									Her unique approach combines evidence-based coaching
-									methodologies with deep empathy and cultural intelligence,
-									creating a safe space for executives to explore their
-									potential and overcome limitations.
-								</p>
-								<p>
-									From Fortune 500 C-suite executives to emerging leaders,
-									Nkechi has guided over 500 professionals through
-									transformative journeys that have resulted in promotions,
-									successful organizational changes, and profound personal
-									growth.
-								</p>
-							</div>
-
-							{/* Mobile read more button */}
+							{/* Read more button */}
 							<button
 								type="button"
 								onClick={() => setIsModalOpen(true)}
-								className="md:hidden text-[#E0672A] font-semibold flex items-center hover:underline"
+								className="text-[#E0672A] font-semibold flex items-center hover:underline"
 							>
 								Read More
 							</button>
@@ -120,10 +109,10 @@ export default function Convener() {
 				</div>
 			</div>
 
-			{/* Read More Modal for Mobile */}
+			{/* Read More Modal */}
 			{isModalOpen && (
-				<div className="fixed inset-0 z-50 flex items-center justify-center bg-[#051F23]/95 px-5 md:hidden backdrop-blur-md">
-					<div className="relative w-full max-w-sm rounded-[24px] bg-white/[0.05] border border-white/10 p-6 shadow-2xl">
+				<div className="fixed inset-0 z-50 flex items-center justify-center bg-[#051F23]/95 px-5 backdrop-blur-md">
+					<div className="relative w-full max-w-sm md:max-w-2xl rounded-[24px] bg-white/[0.05] border border-white/10 p-6 md:p-8 shadow-2xl">
 						<button
 							type="button"
 							onClick={() => setIsModalOpen(false)}
@@ -133,26 +122,43 @@ export default function Convener() {
 							<X size={20} />
 						</button>
 						<h3 className="font-serif text-[24px] text-[#FAF8F3] mb-5 pr-8 leading-tight">
-							About Nkechi
+							Meet Nkechi Ken Nkwonta
 						</h3>
 						<div className="space-y-4 text-[14px] leading-[1.65] text-[#D8E0E2] max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
-							<p>
-								With over a decade of experience in leadership development and
-								organizational psychology, Nkechi Ken-Nkwonta has dedicated her
-								career to transforming the way leaders think, communicate, and
-								inspire.
+							<p className="font-semibold text-[#E0672A] mb-1">
+								AKA Structure Queen
 							</p>
 							<p>
-								Her unique approach combines evidence-based coaching
-								methodologies with deep empathy and cultural intelligence,
-								creating a safe space for executives to explore their potential
-								and overcome limitations.
+								Nkechi Ken-Nkwonta, widely known as the Structure Queen, is a
+								distinguished leadership strategist and institutional architect
+								with over 17 years of building and managing organisations with
+								intentional structure and strategic foresight. Her leadership
+								journey has been defined by a deep commitment to governance,
+								policy development, operational excellence, and sustainable
+								growth. She is widely respected for positioning structure not as
+								bureaucracy, but as the strategic framework that protects vision
+								and secures longevity.
 							</p>
 							<p>
-								From Fortune 500 C-suite executives to emerging leaders, Nkechi
-								has guided over 500 professionals through transformative
-								journeys that have resulted in promotions, successful
-								organizational changes, and profound personal growth.
+								Passionate about leadership enhancement, organizational growth,
+								and generational continuity, Nkechi has consistently championed
+								the shift from personality-driven enterprises to principle-led
+								institutions. She equips founders, school owners, and executive
+								teams with the clarity and systems required to institutionalize
+								their vision, strengthen culture, and develop leaders who can
+								carry the mandate forward. Her philosophy is firm: true
+								leadership is measured not by presence, but by permanence.
+							</p>
+							<p>
+								Now, with the wisdom of experience and a legacy-driven
+								conviction, Nkechi is committed to supporting other leaders in
+								actualizing their vision of longevity. As the convener of
+								Leading Beyond Yourself (a strategic succession planning
+								leadership conference) and Leaders Escape ( a 3days and 3 nights
+								retreat for C-suite and emerging leaders), she is building a
+								community of forward-thinking leaders who are ready to move
+								beyond success toward succession — and beyond influence toward
+								enduring impact while maintaining good health and sound mind.
 							</p>
 						</div>
 					</div>

@@ -58,9 +58,9 @@ export default function CostOfNotResetting() {
 							The Leadership Reset
 						</p>
 						<h2 className="font-serif text-[32px] md:text-[3.5rem] lg:text-[4rem] leading-[1.1] md:leading-[1.05] text-[#0D4D55] mb-5 md:mb-6 tracking-tight">
-							The Hidden Cost of
+							The Hidden Cost
 							<br />
-							Not Resetting<span className="text-[#E0672A]">.</span>
+							Of Not Resetting<span className="text-[#E0672A]">.</span>
 						</h2>
 						<p className="font-sans text-[rgba(13,77,85,0.85)] text-[14px] md:text-[17px] leading-[1.65] mb-5 md:mb-6 max-w-lg">
 							In the relentless pursuit of growth, the most critical asset—your

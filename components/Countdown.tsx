@@ -87,7 +87,6 @@ export default function Countdown({ onRegister }: CountdownProps) {
 
 					{/* Hours */}
 					<div className="flex flex-col items-center flex-1">
-						<div className="text-[#E0672A] w-4 h-4 md:w-6 md:h-6 mb-2 md:mb-5" />
 						<span className="font-serif text-[36px] md:text-[4.5rem] lg:text-[5.5rem] text-[#F9F7F3] leading-none mb-1 md:mb-3">
 							{String(timeLeft.hours).padStart(2, "0")}
 						</span>
@@ -100,7 +99,6 @@ export default function Countdown({ onRegister }: CountdownProps) {
 
 					{/* Mins */}
 					<div className="flex flex-col items-center flex-1">
-						<div className="text-[#E0672A] w-4 h-4 md:w-6 md:h-6 mb-2 md:mb-5" />
 						<span className="font-serif text-[36px] md:text-[4.5rem] lg:text-[5.5rem] text-[#F9F7F3] leading-none mb-1 md:mb-3">
 							{String(timeLeft.minutes).padStart(2, "0")}
 						</span>
@@ -113,7 +111,6 @@ export default function Countdown({ onRegister }: CountdownProps) {
 
 					{/* Secs */}
 					<div className="flex flex-col items-center flex-1">
-						<div className="text-[#E0672A] w-4 h-4 md:w-6 md:h-6 mb-2 md:mb-5" />
 						<span className="font-serif text-[36px] md:text-[4.5rem] lg:text-[5.5rem] text-[#F9F7F3] leading-none mb-1 md:mb-3">
 							{String(timeLeft.seconds).padStart(2, "0")}
 						</span>

@@ -55,12 +55,6 @@ export default function InvestmentValue({ onRegister }: InvestmentValueProps) {
 						{/* Left Col - Checkmarks */}
 						<div className="w-full md:w-1/2 flex flex-col md:pr-10 lg:pr-16">
 							<div className="flex items-center gap-4 md:mb-10">
-								<div className="w-12 h-12 md:w-14 md:h-14 rounded-full border border-[#E0672A] flex items-center justify-center shrink-0">
-									<Gift
-										className="text-[#E0672A] w-5 h-5 md:w-6 md:h-6"
-										strokeWidth={1.5}
-									/>
-								</div>
 								<h3 className="font-serif text-white text-[28px] md:text-[36px]">
 									What&apos;s Included
 								</h3>

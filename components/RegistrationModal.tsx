@@ -1,6 +1,6 @@
 "use client";
 
-import { CheckCircle2, X } from "lucide-react";
+import { Check, CheckCircle2, Copy, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 interface RegistrationModalProps {
@@ -18,6 +18,17 @@ export default function RegistrationModal({
 	const [isClosing, setIsClosing] = useState(false);
 	const [isProcessing, setIsProcessing] = useState(false);
 	const [prevIsOpen, setPrevIsOpen] = useState(isOpen);
+	const [copied, setCopied] = useState(false);
+
+	const handleCopy = async () => {
+		try {
+			await navigator.clipboard.writeText("0123456789");
+			setCopied(true);
+			setTimeout(() => setCopied(false), 2000);
+		} catch (err) {
+			console.error("Failed to copy text: ", err);
+		}
+	};
 
 	if (isOpen !== prevIsOpen) {
 		setPrevIsOpen(isOpen);
@@ -194,9 +205,23 @@ export default function RegistrationModal({
 										</div>
 										<div className="flex justify-between items-center">
 											<span className="text-gray-500">Account Number:</span>
-											<strong className="text-[#0D4D55] text-lg">
-												0123456789
-											</strong>
+											<div className="flex items-center gap-2">
+												<strong className="text-[#0D4D55] text-lg">
+													0123456789
+												</strong>
+												<button
+													type="button"
+													onClick={handleCopy}
+													className="text-gray-400 hover:text-[#0D4D55] transition-colors focus:outline-none flex items-center justify-center p-1 rounded-md"
+													title="Copy Account Number"
+												>
+													{copied ? (
+														<Check size={16} className="text-green-500" />
+													) : (
+														<Copy size={16} />
+													)}
+												</button>
+											</div>
 										</div>
 									</div>
 								</div>
