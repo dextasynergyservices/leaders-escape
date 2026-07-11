@@ -46,11 +46,11 @@ export default function CostOfNotResetting() {
 				>
 					<div className="relative w-full md:w-1/2 aspect-[4/3] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-[0_16px_40px_rgba(13,77,85,0.15)] border border-[rgba(13,77,85,0.08)] shrink-0 z-10">
 						<Image
-							src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+							src="https://res.cloudinary.com/dxoorukfj/image/upload/v1783793089/reset_vie8g3.png"
 							alt="Executive Stress"
-							fill
-							sizes="(max-width: 768px) 100vw, 50vw"
-							className="object-cover"
+							width={1200}
+							height={900}
+							className="w-full h-full object-cover"
 						/>
 					</div>
 					<div className="w-full md:w-1/2 flex flex-col relative z-10 md:pl-4 lg:pl-10">
@@ -85,11 +85,11 @@ export default function CostOfNotResetting() {
 				>
 					<div className="relative w-full md:w-1/2 aspect-[16/10] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-[0_24px_48px_rgba(0,0,0,0.3)] border border-[rgba(255,255,255,0.1)] shrink-0 z-10">
 						<Image
-							src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+							src="https://res.cloudinary.com/dxoorukfj/image/upload/v1783791784/Finima-Beach-Bonny-Island_rd4v7m.webp"
 							alt="Clarity and Focus"
-							fill
-							sizes="(max-width: 768px) 100vw, 50vw"
-							className="object-cover"
+							width={1200}
+							height={750}
+							className="w-full h-full object-cover"
 						/>
 					</div>
 					<div className="w-full md:w-1/2 flex flex-col relative z-10 md:pr-4 lg:pr-10">

@@ -96,23 +96,29 @@ export default function FAQ() {
 								<button
 									type="button"
 									onClick={() => toggleFaq(index)}
-									className="w-full flex items-center justify-between p-4 md:p-6 text-left hover:bg-[rgba(13,77,85,0.02)] transition-colors focus:outline-none group"
+									className="w-full flex items-center justify-between p-3.5 md:p-6 text-left hover:bg-[rgba(13,77,85,0.02)] transition-colors focus:outline-none group"
 								>
-									<div className="flex items-center gap-4 md:gap-6 pr-4 md:pr-6">
-										<div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#F3EFE9] flex items-center justify-center shrink-0 text-[#0D4D55] border border-[rgba(13,77,85,0.03)] group-hover:bg-[#EBE5DB] transition-colors">
+									<div className="flex items-center gap-3 md:gap-6 pr-2 md:pr-6">
+										<div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#F3EFE9] flex items-center justify-center shrink-0 text-[#0D4D55] border border-[rgba(13,77,85,0.03)] group-hover:bg-[#EBE5DB] transition-colors">
 											{faq.icon}
 										</div>
-										<span className="font-serif text-[18px] md:text-[24px] text-[#0D4D55] leading-snug">
+										<span className="font-serif text-[16px] md:text-[24px] text-[#0D4D55] leading-snug">
 											{faq.question}
 										</span>
 									</div>
 									<div
-										className={`flex-shrink-0 w-10 h-10 md:w-14 md:h-14 rounded-full border flex items-center justify-center transition-transform duration-300 bg-white border-[rgba(13,77,85,0.1)] text-[#0D4D55] shadow-sm ${isOpen ? "rotate-180" : ""}`}
+										className={`flex-shrink-0 w-8 h-8 md:w-14 md:h-14 rounded-full border flex items-center justify-center transition-transform duration-300 bg-white border-[rgba(13,77,85,0.1)] text-[#0D4D55] shadow-sm ${isOpen ? "rotate-180" : ""}`}
 									>
 										{isOpen ? (
-											<Minus size={20} strokeWidth={1.5} />
+											<Minus
+												className="w-4 h-4 md:w-5 md:h-5"
+												strokeWidth={1.5}
+											/>
 										) : (
-											<Plus size={20} strokeWidth={1.5} />
+											<Plus
+												className="w-4 h-4 md:w-5 md:h-5"
+												strokeWidth={1.5}
+											/>
 										)}
 									</div>
 								</button>
@@ -120,7 +126,7 @@ export default function FAQ() {
 								<div
 									className={`transition-all duration-300 ease-in-out ${isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}
 								>
-									<div className="px-4 md:px-6 pb-6 md:pb-8 pl-[80px] md:pl-[112px]">
+									<div className="px-3.5 md:px-6 pb-5 md:pb-8 pl-[66px] md:pl-[112px]">
 										<p className="font-sans text-[rgba(13,77,85,0.75)] text-[14px] md:text-[17px] leading-relaxed">
 											{faq.answer}
 										</p>

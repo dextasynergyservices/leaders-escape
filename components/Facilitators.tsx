@@ -157,7 +157,7 @@ export default function Convener() {
 								leadership conference) and Leaders Escape ( a 3days and 3 nights
 								retreat for C-suite and emerging leaders), she is building a
 								community of forward-thinking leaders who are ready to move
-								beyond success toward succession — and beyond influence toward
+								beyond success toward succession and beyond influence toward
 								enduring impact while maintaining good health and sound mind.
 							</p>
 						</div>

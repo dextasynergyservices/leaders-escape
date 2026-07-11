@@ -54,21 +54,21 @@ export default function Gallery() {
 
 	return (
 		<>
-			<section className="relative w-full py-16 md:py-32 flex flex-col items-center justify-center bg-[#FAF8F3] overflow-hidden">
+			<section className="relative w-full py-12 md:py-32 flex flex-col items-center justify-center bg-[#FAF8F3] overflow-hidden">
 				<div
 					ref={ref}
 					className={`relative z-10 w-full max-w-7xl px-4 md:px-6 mx-auto flex flex-col items-center transition-all duration-1000 transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"}`}
 				>
-					<div className="flex flex-col items-center text-center mb-10 md:mb-20">
-						<p className="text-[#E0672A] uppercase tracking-[0.15em] text-[13px] md:text-sm font-semibold mb-4 md:mb-5">
+					<div className="flex flex-col items-center text-center mb-8 md:mb-20">
+						<p className="text-[#E0672A] uppercase tracking-[0.15em] text-[11px] md:text-sm font-semibold mb-3 md:mb-5">
 							The Experience
 						</p>
-						<h2 className="font-serif text-[36px] md:text-[4rem] lg:text-[4.5rem] leading-[1.1] md:leading-[1.05] text-[#0D4D55] mb-5 md:mb-6">
+						<h2 className="font-serif text-[32px] md:text-[4rem] lg:text-[4.5rem] leading-[1.1] md:leading-[1.05] text-[#0D4D55] mb-4 md:mb-6">
 							A Glimpse of
 							<br className="md:hidden" /> the Escape.
 						</h2>
-						<div className="w-10 h-[2px] bg-[#E0672A] mb-5 md:hidden"></div>
-						<p className="font-sans text-[rgba(13,77,85,0.85)] text-[15px] md:text-xl max-w-2xl leading-[1.6]">
+						<div className="w-10 h-[2px] bg-[#E0672A] mb-4 md:hidden"></div>
+						<p className="font-sans text-[rgba(13,77,85,0.85)] text-[13px] md:text-xl max-w-2xl leading-[1.6]">
 							Where sophisticated environments
 							<br className="md:hidden" /> meet untamed nature.
 						</p>
@@ -80,7 +80,7 @@ export default function Gallery() {
 						{/* biome-ignore lint/a11y/useKeyWithClickEvents: Interactive featured image */}
 						{/* biome-ignore lint/a11y/noStaticElementInteractions: Interactive featured image */}
 						<div
-							className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden mb-6 border border-[rgba(13,77,85,0.08)] shadow-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#E0672A]"
+							className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden mb-4 border border-[rgba(13,77,85,0.08)] shadow-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#E0672A]"
 							onClick={() => setLightboxImageIndex(activeIndex)}
 						>
 							<Image
@@ -97,7 +97,7 @@ export default function Gallery() {
 						</div>
 
 						{/* Pagination Dots */}
-						<div className="flex justify-center gap-2 mb-8">
+						<div className="flex justify-center gap-2 mb-6">
 							{mobileImages.map((_, idx) => (
 								<button
 									type="button"
@@ -113,7 +113,7 @@ export default function Gallery() {
 						</div>
 
 						{/* Thumbnails */}
-						<div className="grid grid-cols-3 gap-3 mb-10">
+						<div className="grid grid-cols-3 gap-3 mb-6">
 							{mobileImages
 								.map((src, originalIndex) => ({ src, originalIndex }))
 								.filter((img) => img.originalIndex !== activeIndex)

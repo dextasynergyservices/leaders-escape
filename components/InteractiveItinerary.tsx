@@ -21,104 +21,263 @@ import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 
 const itinerary = [
 	{
-		day: "Day 1",
-		title: "Arrival & Deep Reset",
+		day: "DAY ZERO – 27th",
+		title: "Arrival and Dep Reset",
 		schedule: [
 			{
-				time: "14:00",
-				event: "Private VIP Check-In & Welcome Reception",
-				description:
-					"Personalized arrival, concierge welcome, and exclusive networking.",
-				Icon: Plane,
-			},
-			{
-				time: "16:00",
-				event: "Orientation & Intention Setting Session",
-				description: "Aligning purpose, expectations, and outcomes.",
-				Icon: Presentation,
-			},
-			{
-				time: "18:30",
-				event: "Curated Executive Dinner",
-				description: "Fine dining experience with curated conversations.",
+				time: "12:00 – 2:00 PM",
+				event: "Guest Arrival, Concierge Check-in & Welcome Refreshments",
+				description: "",
 				Icon: ConciergeBell,
 			},
 			{
-				time: "20:30",
-				event: "Fireside Chat: The Burden of Leadership",
-				description: "Honest dialogue on leadership challenges and resilience.",
+				time: "12:30 – 2:30 PM",
+				event: "Executive Welcome Lunch",
+				description: "",
+				Icon: ConciergeBell,
+			},
+			{
+				time: "2:30 – 4:00 PM",
+				event: "Check-in, Settle into Rooms & Leisure Time",
+				description: "",
+				Icon: Plane,
+			},
+			{
+				time: "4:00 – 5:00 PM",
+				event:
+					"Welcome Circle: The Beginning of the Escape (Introductions, Retreat Intentions & Community Agreements)",
+				description: "",
+				Icon: Users,
+			},
+			{
+				time: "5:00 – 5:30 PM",
+				event: "Sunset Tea & Quiet Reflection",
+				description: "",
+				Icon: Sunrise,
+			},
+			{
+				time: "5:30 – 6:30 PM",
+				event: "Gentle Stretching, Breathwork & Guided Mindfulness",
+				description: "",
+				Icon: Activity,
+			},
+			{
+				time: "7:00 – 9:00 PM",
+				event: "Executive Welcome Dinner",
+				description: "",
+				Icon: ConciergeBell,
+			},
+			{
+				time: "9:00 – 9:45 PM",
+				event:
+					"Fireside Welcome Conversation: Why Great Leaders Must Learn to Pause",
+				description: "",
 				Icon: Flame,
 			},
 		],
 	},
 	{
-		day: "Day 2",
-		title: "Clarity & Strategy",
+		day: "DAY ONE – 28th",
+		title: "Leading Yourself",
 		schedule: [
 			{
-				time: "07:30",
-				event: "Guided Mindfulness & Movement",
-				description: "Start your day with intention and clarity.",
+				time: "6:30 – 7:45 AM",
+				event:
+					"Guided Mindfulness and Movement Sunrise Wellness Session (Mobility, Stretching & Breathwork)",
+				description: "",
 				Icon: Activity,
 			},
 			{
-				time: "09:00",
-				event: "Masterclass: Future-Proofing Your Vision",
-				description: "Deep dive into strategic foresight.",
-				Icon: TrendingUp,
+				time: "8:00 – 9:00 AM",
+				event: "Executive Breakfast",
+				description: "",
+				Icon: ConciergeBell,
 			},
 			{
-				time: "12:30",
-				event: "Networking Luncheon",
-				description: "Connect with peers over a curated meal.",
+				time: "9:15 – 10:45 AM",
+				event: "Leadership Masterclass 1: Future-Proofing Your Vision",
+				description: "",
+				Icon: Presentation,
+			},
+			{
+				time: "10:45 – 11:15 AM",
+				event: "Coffee Break & Networking",
+				description: "",
 				Icon: Users,
 			},
 			{
-				time: "14:00",
-				event: "Peer-to-Peer Strategy Roundtables",
-				description: "Collaborative problem solving sessions.",
+				time: "11:15 AM – 12:30 PM",
+				event: "Leadership Masterclass 2: Leading Without Burning Out",
+				description: "",
+				Icon: Presentation,
+			},
+			{
+				time: "12:30 – 2:00 PM",
+				event: "Executive Networking Luncheon – Conversations That Matter",
+				description: "",
 				Icon: MessageSquare,
 			},
 			{
-				time: "16:30",
-				event: "Rest & Wellness Integration",
-				description: "Time for personal reflection and spa services.",
+				time: "2:00 – 3:30 PM",
+				event: "The Clarity Walk & Guided Reflection Journaling",
+				description: "",
 				Icon: Sprout,
 			},
 			{
-				time: "19:00",
-				event: "Gala Dinner & Keynote Address",
-				description: "An evening of celebration and insights.",
+				time: "3:30 – 4:00 PM",
+				event: "Tea Break",
+				description: "",
 				Icon: ConciergeBell,
+			},
+			{
+				time: "4:00 – 5:30 PM",
+				event:
+					"Fireside Conversation: What Leadership Has Cost Me—and What It Has Given Me",
+				description: "",
+				Icon: Flame,
+			},
+			{
+				time: "5:30 – 7:00 PM",
+				event: "Free Time (Spa, Swimming, Reading or Rest)",
+				description: "",
+				Icon: Activity,
+			},
+			{
+				time: "7:00 – 9:00 PM",
+				event: "Curated Dinner Experience",
+				description: "",
+				Icon: ConciergeBell,
+			},
+			{
+				time: "9:00 PM",
+				event: "Quiet Reflection & Rest",
+				description: "",
+				Icon: Leaf,
 			},
 		],
 	},
 	{
-		day: "Day 3",
-		title: "Action & Integration",
+		day: "DAY TWO – 29th",
+		title: "Discover. Connect. Celebrate.",
 		schedule: [
 			{
-				time: "08:00",
-				event: "Reflection & Nature Walk",
-				description: "Morning integration in nature.",
-				Icon: Sunrise,
+				time: "6:30 – 7:30 AM",
+				event: "Morning Nature Walk, Body Movement & Stretching",
+				description: "",
+				Icon: Leaf,
 			},
 			{
-				time: "10:00",
-				event: "Workshop: Building Your Execution Framework",
-				description: "Translating strategy into actionable steps.",
+				time: "7:30 – 8:00 AM",
+				event: "Mindfulness & Gratitude Session",
+				description: "",
+				Icon: Sprout,
+			},
+			{
+				time: "8:00 – 9:00 AM",
+				event: "Executive Breakfast",
+				description: "",
+				Icon: ConciergeBell,
+			},
+			{
+				time: "9:00 AM – 3:00 PM",
+				event: "Curated Tour & Cultural Experience (Including Lunch)",
+				description: "",
+				Icon: Plane,
+			},
+			{
+				time: "3:00 – 4:00 PM",
+				event: "Return to Resort & Leisure Time",
+				description: "",
+				Icon: Activity,
+			},
+			{
+				time: "4:00 – 5:00 PM",
+				event:
+					"Wellness Lounge (Massage, Tea Bar & Optional Executive Coaching)",
+				description: "",
+				Icon: Leaf,
+			},
+			{
+				time: "5:30 – 6:30 PM",
+				event:
+					"Fireside Conversation: Building a Leadership Legacy Beyond Success",
+				description: "",
+				Icon: Flame,
+			},
+			{
+				time: "7:30 – 10:30 PM",
+				event:
+					"The Legacy Gala – Red Carpet Reception, Fine Dining, Live Entertainment, Leadership Recognition & Celebration",
+				description: "",
+				Icon: TrendingUp,
+			},
+		],
+	},
+	{
+		day: "DAY THREE – 30th",
+		title: "Return with Purpose",
+		schedule: [
+			{
+				time: "6:30 – 7:15 AM",
+				event: "Dance Aerobics",
+				description: "",
+				Icon: Activity,
+			},
+			{
+				time: "7:15 – 7:45 AM",
+				event: "Reflection Walk",
+				description: "",
+				Icon: Leaf,
+			},
+			{
+				time: "8:00 – 9:00 AM",
+				event: "Executive Breakfast",
+				description: "",
+				Icon: ConciergeBell,
+			},
+			{
+				time: "9:15 – 10:45 AM",
+				event:
+					"Leadership Masterclass 3: Building Organizations That Outlive You",
+				description: "",
+				Icon: Presentation,
+			},
+			{
+				time: "10:45 – 11:15 AM",
+				event: "Coffee Break",
+				description: "",
+				Icon: Users,
+			},
+			{
+				time: "11:15 AM – 12:30 PM",
+				event:
+					"Executive Action Planning Workshop: My 90-Day Leadership Blueprint",
+				description: "",
 				Icon: ArrowUpRight,
 			},
 			{
-				time: "12:00",
-				event: "Closing Ceremony & Commitments",
-				description: "Final reflections and accountability.",
+				time: "12:30 – 1:30 PM",
+				event: "Farewell Lunch",
+				description: "",
+				Icon: ConciergeBell,
+			},
+			{
+				time: "1:30 – 2:30 PM",
+				event: "Leadership Commitment Ceremony & Letters to My Future Self",
+				description: "",
 				Icon: CheckCircle,
 			},
 			{
-				time: "13:30",
-				event: "Farewell Brunch & Departures",
-				description: "Final goodbyes until next time.",
+				time: "2:30 – 3:00 PM",
+				event:
+					"Closing Reflections, Appreciation, Presentation of Retreat Souvenirs & Official Group Photograph",
+				description: "",
+				Icon: Presentation,
+			},
+			{
+				time: "3:00 PM",
+				event: "Check-out & Departure",
+				description: "",
 				Icon: Plane,
 			},
 		],
@@ -176,11 +335,11 @@ export default function InteractiveItinerary() {
 									onClick={() => toggleDay(index)}
 									className="w-full flex items-center justify-between p-3.5 md:p-6 text-left hover:bg-black/5 transition-colors focus:outline-none"
 								>
-									<div className="flex items-center gap-3 md:gap-6">
+									<div className="flex flex-col md:flex-row items-start md:items-center gap-1.5 md:gap-6">
 										<span className="bg-[#0D4D55] text-white px-3 md:px-5 py-1 md:py-1.5 rounded-full text-[10px] md:text-[11px] font-bold tracking-widest uppercase whitespace-nowrap shrink-0">
 											{dayData.day}
 										</span>
-										<span className="font-serif text-[18px] md:text-[28px] text-[#0D4D55] leading-tight">
+										<span className="font-serif text-[17px] md:text-[28px] text-[#0D4D55] leading-tight">
 											{dayData.title}
 										</span>
 									</div>
@@ -200,11 +359,11 @@ export default function InteractiveItinerary() {
 											{dayData.schedule.map((slot, i) => (
 												<div
 													key={slot.event}
-													className="flex gap-3 md:gap-6 relative pb-6 md:pb-8 last:pb-0"
+													className="flex gap-2.5 md:gap-6 relative pb-6 md:pb-8 last:pb-0"
 												>
 													{/* Time Column */}
-													<div className="w-12 md:w-16 text-right pt-[10px] md:pt-[12px] shrink-0">
-														<span className="font-bold text-[#E0672A] text-[12px] md:text-[14px]">
+													<div className="w-[70px] md:w-[96px] text-right pt-[10px] md:pt-[12px] shrink-0">
+														<span className="font-bold text-[#E0672A] text-[11px] md:text-[13px] leading-tight block">
 															{slot.time}
 														</span>
 													</div>
@@ -218,7 +377,7 @@ export default function InteractiveItinerary() {
 													</div>
 
 													{/* Content Column */}
-													<div className="flex-1 flex items-start gap-3 md:gap-5">
+													<div className="flex-1 flex items-start gap-2.5 md:gap-5">
 														<div className="w-8 h-8 md:w-12 md:h-12 rounded-[10px] md:rounded-[14px] bg-[#F4EFE6] flex items-center justify-center text-[#0D4D55] shrink-0 mt-1 md:mt-0.5">
 															<slot.Icon
 																className="w-4 h-4 md:w-5 md:h-5"
@@ -230,9 +389,11 @@ export default function InteractiveItinerary() {
 															<h4 className="text-[#0D4D55] font-bold text-[13px] md:text-[15px] leading-tight mb-1 pr-2">
 																{slot.event}
 															</h4>
-															<p className="text-[#5A6A6F] text-[11px] md:text-[13px] leading-relaxed max-w-md pr-1">
-																{slot.description}
-															</p>
+															{slot.description && (
+																<p className="text-[#5A6A6F] text-[11px] md:text-[13px] leading-relaxed max-w-md pr-1">
+																	{slot.description}
+																</p>
+															)}
 														</div>
 													</div>
 												</div>
