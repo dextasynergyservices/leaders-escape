@@ -1,6 +1,5 @@
 "use client";
 
-import { Users } from "lucide-react";
 import Image from "next/image";
 import { useRef } from "react";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
@@ -8,10 +7,8 @@ import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 export default function CostOfNotResetting() {
 	const ref1 = useRef<HTMLDivElement>(null);
 	const ref2 = useRef<HTMLDivElement>(null);
-	const ref3 = useRef<HTMLDivElement>(null);
 	const isVisible1 = useIntersectionObserver(ref1);
 	const isVisible2 = useIntersectionObserver(ref2);
-	const isVisible3 = useIntersectionObserver(ref3);
 
 	return (
 		<div className="w-full flex flex-col">
@@ -115,12 +112,12 @@ export default function CostOfNotResetting() {
 			</section>
 
 			{/* Block 3 — Exclusivity is Guaranteed */}
-			<section className="relative w-full py-16 md:py-28 flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat bg-[#F9F7F3] bg-[url('https://res.cloudinary.com/dxoorukfj/image/upload/v1783672116/ChatGPT_Image_Jul_10_2026_09_28_07_AM_imyih7.png')] md:bg-[url('https://res.cloudinary.com/dxoorukfj/image/upload/v1783672071/ChatGPT_Image_Jul_10_2026_09_25_50_AM_dnw5sy.png')] overflow-hidden">
+			{/* <section className="relative w-full py-16 md:py-28 flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat bg-[#F9F7F3] bg-[url('https://res.cloudinary.com/dxoorukfj/image/upload/v1783672116/ChatGPT_Image_Jul_10_2026_09_28_07_AM_imyih7.png')] md:bg-[url('https://res.cloudinary.com/dxoorukfj/image/upload/v1783672071/ChatGPT_Image_Jul_10_2026_09_25_50_AM_dnw5sy.png')] overflow-hidden">
 				<div
 					ref={ref3}
 					className={`relative z-10 w-full max-w-3xl px-4 md:px-6 mx-auto flex flex-col items-center text-center transition-all duration-1000 transform ${isVisible3 ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"}`}
 				>
-					{/* Divider with Icon */}
+					
 					<div className="flex items-center justify-center w-full mb-6 md:mb-10">
 						<div className="w-full h-px bg-gradient-to-r from-transparent to-[rgba(13,77,85,0.2)]" />
 						<div className="w-16 h-16 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center shadow-[0_8px_32px_rgba(13,77,85,0.08)] mx-4 shrink-0 relative z-10 border border-[rgba(13,77,85,0.05)]">
@@ -142,7 +139,7 @@ export default function CostOfNotResetting() {
 						filled, applications will close until the following year.
 					</p>
 				</div>
-			</section>
+			</section> */}
 		</div>
 	);
 }

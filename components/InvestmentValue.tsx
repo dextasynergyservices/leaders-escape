@@ -89,11 +89,25 @@ export default function InvestmentValue({ onRegister }: InvestmentValueProps) {
 
 						{/* Right Col - Price & CTA */}
 						<div className="w-full md:w-1/2 flex flex-col items-center justify-center text-center md:pl-10 lg:pl-16">
-							<div className="flex items-center justify-center gap-3 md:mb-6 w-full"></div>
-
-							<span className="font-serif text-[56px] md:text-[72px] lg:text-[88px] text-white leading-none mb-4 md:mb-6 tracking-tight">
-								₦500,000
-							</span>
+							<div className="flex flex-col items-center gap-2 mb-6 md:mb-8 w-full">
+								<div className="flex flex-col items-center w-full">
+									<span className="text-[rgba(255,255,255,0.7)] text-[11px] md:text-[13px] font-bold font-sans mb-1 uppercase tracking-widest">
+										Single Occupancy
+									</span>
+									<span className="font-serif text-[40px] md:text-[56px] lg:text-[64px] text-white leading-none tracking-tight">
+										₦800,000
+									</span>
+								</div>
+								<div className="w-16 h-[1px] bg-white/10 my-2 md:my-3"></div>
+								<div className="flex flex-col items-center w-full">
+									<span className="text-[rgba(255,255,255,0.7)] text-[11px] md:text-[13px] font-bold font-sans mb-1 uppercase tracking-widest">
+										Double Occupancy
+									</span>
+									<span className="font-serif text-[40px] md:text-[56px] lg:text-[64px] text-white leading-none tracking-tight">
+										₦600,000
+									</span>
+								</div>
+							</div>
 
 							<button
 								type="button"

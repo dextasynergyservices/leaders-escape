@@ -19,6 +19,9 @@ export default function RegistrationModal({
 	const [isProcessing, setIsProcessing] = useState(false);
 	const [prevIsOpen, setPrevIsOpen] = useState(isOpen);
 	const [copied, setCopied] = useState(false);
+	const [occupancyTab, setOccupancyTab] = useState<"single" | "shared">(
+		"single",
+	);
 
 	const handleCopy = async () => {
 		try {
@@ -150,19 +153,39 @@ export default function RegistrationModal({
 
 					{step === "payment" && (
 						<div className="flex flex-col gap-6 h-full min-h-[300px]">
+							{/* Tab Selection */}
+							<div className="flex p-1 bg-gray-100 rounded-xl">
+								<button
+									type="button"
+									onClick={() => setOccupancyTab("single")}
+									className={`flex-1 py-2.5 text-sm font-medium rounded-lg transition-colors ${occupancyTab === "single" ? "bg-white text-[#0D4D55] shadow-sm" : "text-gray-500 hover:text-[#0D4D55]"}`}
+								>
+									Single Occupancy
+								</button>
+								<button
+									type="button"
+									onClick={() => setOccupancyTab("shared")}
+									className={`flex-1 py-2.5 text-sm font-medium rounded-lg transition-colors ${occupancyTab === "shared" ? "bg-white text-[#0D4D55] shadow-sm" : "text-gray-500 hover:text-[#0D4D55]"}`}
+								>
+									Double Occupancy
+								</button>
+							</div>
+
 							<div className="bg-[#FAF8F3] p-5 rounded-2xl border border-[rgba(13,77,85,0.08)] flex flex-col gap-4">
 								<div className="flex justify-between items-center pb-4 border-b border-[rgba(13,77,85,0.08)]">
 									<span className="font-sans font-semibold text-[#0D4D55]">
 										Retreat Fee
 									</span>
 									<span className="font-serif text-2xl text-[#0D4D55]">
-										₦500,000
+										{occupancyTab === "single" ? "₦800,000" : "₦600,000"}
 									</span>
 								</div>
 								<ul className="flex flex-col gap-2">
 									<li className="flex items-center gap-3 text-sm text-[rgba(13,77,85,0.85)]">
 										<CheckCircle2 size={16} className="text-[#E0672A]" /> 3
-										Days, 2 Nights Accommodation
+										Days, 2 Nights{" "}
+										{occupancyTab === "single" ? "Single Room" : "Shared Room"}{" "}
+										Accommodation
 									</li>
 									<li className="flex items-center gap-3 text-sm text-[rgba(13,77,85,0.85)]">
 										<CheckCircle2 size={16} className="text-[#E0672A]" /> All
@@ -181,12 +204,17 @@ export default function RegistrationModal({
 										Option 1: Mainstack Payment
 									</h4>
 									<a
-										href="https://mainstack.store/"
+										href={
+											occupancyTab === "single"
+												? "https://mainstack.store/"
+												: "https://mainstack.store/"
+										}
 										target="_blank"
 										rel="noopener noreferrer"
 										className="w-full h-10 md:h-12 text-sm md:text-base bg-white hover:bg-gray-50 text-[#0D4D55] rounded-xl font-medium transition-colors flex items-center justify-center border border-[#0D4D55]/20 shadow-sm"
 									>
-										Pay via Mainstack
+										Pay {occupancyTab === "single" ? "₦800,000" : "₦600,000"}{" "}
+										via Mainstack
 									</a>
 								</div>
 

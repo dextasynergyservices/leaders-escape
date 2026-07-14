@@ -20,9 +20,10 @@ import { useRef, useState } from "react";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 
 const itinerary = [
+	// Day Zero
 	{
 		day: "DAY ZERO – 27th",
-		title: "Arrival and Dep Reset",
+		title: "Arrival and Deep Reset",
 		schedule: [
 			{
 				time: "12:00 – 2:00 PM",
@@ -76,6 +77,8 @@ const itinerary = [
 			},
 		],
 	},
+
+	// Day One
 	{
 		day: "DAY ONE – 28th",
 		title: "Leading Yourself",
@@ -83,7 +86,7 @@ const itinerary = [
 			{
 				time: "6:30 – 7:45 AM",
 				event:
-					"Guided Mindfulness and Movement Sunrise Wellness Session (Mobility, Stretching & Breathwork)",
+					"Sunrise Wellness Session ( Mobility, Stretching and Breathwork)",
 				description: "",
 				Icon: Activity,
 			},
@@ -138,15 +141,15 @@ const itinerary = [
 			},
 			{
 				time: "5:30 – 7:00 PM",
-				event: "Free Time (Spa, Swimming, Reading or Rest)",
+				event: "Curated Dinner",
 				description: "",
-				Icon: Activity,
+				Icon: ConciergeBell,
 			},
 			{
 				time: "7:00 – 9:00 PM",
-				event: "Curated Dinner Experience",
+				event: "Free time( Spa, swimming, reading, quiet reflection and rest)",
 				description: "",
-				Icon: ConciergeBell,
+				Icon: Activity,
 			},
 			{
 				time: "9:00 PM",
@@ -156,6 +159,8 @@ const itinerary = [
 			},
 		],
 	},
+
+	// Day Two
 	{
 		day: "DAY TWO – 29th",
 		title: "Discover. Connect. Celebrate.",
@@ -192,20 +197,19 @@ const itinerary = [
 			},
 			{
 				time: "4:00 – 5:00 PM",
-				event:
-					"Wellness Lounge (Massage, Tea Bar & Optional Executive Coaching)",
+				event: "Wellness Lounge (Massage, Tea Bar)",
 				description: "",
 				Icon: Leaf,
 			},
 			{
-				time: "5:30 – 6:30 PM",
+				time: "5:30 – 6:45 PM",
 				event:
-					"Fireside Conversation: Building a Leadership Legacy Beyond Success",
+					"Leadership Masterclass 3: Building Organizations That Outlive You",
 				description: "",
 				Icon: Flame,
 			},
 			{
-				time: "7:30 – 10:30 PM",
+				time: "7:45 – 10 PM",
 				event:
 					"The Legacy Gala – Red Carpet Reception, Fine Dining, Live Entertainment, Leadership Recognition & Celebration",
 				description: "",
@@ -213,6 +217,8 @@ const itinerary = [
 			},
 		],
 	},
+
+	// Day Three
 	{
 		day: "DAY THREE – 30th",
 		title: "Return with Purpose",
@@ -238,7 +244,7 @@ const itinerary = [
 			{
 				time: "9:15 – 10:45 AM",
 				event:
-					"Leadership Masterclass 3: Building Organizations That Outlive You",
+					"Fireside Conversation: Building a Leadership Legacy Beyond Success",
 				description: "",
 				Icon: Presentation,
 			},

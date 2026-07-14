@@ -14,9 +14,10 @@ import InteractiveItinerary from "@/components/InteractiveItinerary";
 import InvestmentValue from "@/components/InvestmentValue";
 import LoadingScreen from "@/components/LoadingScreen";
 import RegistrationModal from "@/components/RegistrationModal";
+// import WhyAttend from "@/components/WhyAttend";
+import TravelAndLogistics from "@/components/TravelAndLogistics";
 // import Testimonials from "@/components/Testimonials";
 import WhoYoullMeet from "@/components/WhoYoullMeet";
-// import WhyAttend from "@/components/WhyAttend";
 
 export default function LeaderEscapePage() {
 	const [isModalOpen, setIsModalOpen] = useState(false);
@@ -39,6 +40,7 @@ export default function LeaderEscapePage() {
 			{/* <DressCode /> */}
 			{/* <Testimonials /> */}
 			<CostOfNotResetting />
+			<TravelAndLogistics />
 			<FAQ />
 			<FinalCTA />
 
