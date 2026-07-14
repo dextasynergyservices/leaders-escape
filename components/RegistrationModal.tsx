@@ -25,7 +25,7 @@ export default function RegistrationModal({
 
 	const handleCopy = async () => {
 		try {
-			await navigator.clipboard.writeText("0123456789");
+			await navigator.clipboard.writeText("0004279202");
 			setCopied(true);
 			setTimeout(() => setCopied(false), 2000);
 		} catch (err) {
@@ -225,17 +225,19 @@ export default function RegistrationModal({
 									<div className="bg-gray-50 p-5 rounded-xl border border-gray-200 text-sm font-sans flex flex-col gap-3">
 										<div className="flex justify-between items-center">
 											<span className="text-gray-500">Bank Name:</span>
-											<strong className="text-[#0D4D55]">Your Bank</strong>
+											<strong className="text-[#0D4D55]">Access Bank</strong>
 										</div>
 										<div className="flex justify-between items-center">
 											<span className="text-gray-500">Account Name:</span>
-											<strong className="text-[#0D4D55]">Leaders Escape</strong>
+											<strong className="text-[#0D4D55]">
+												Presentationplus Int&apos;l Ltd
+											</strong>
 										</div>
 										<div className="flex justify-between items-center">
 											<span className="text-gray-500">Account Number:</span>
 											<div className="flex items-center gap-2">
 												<strong className="text-[#0D4D55] text-lg">
-													0123456789
+													0004279202
 												</strong>
 												<button
 													type="button"

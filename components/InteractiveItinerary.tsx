@@ -12,7 +12,6 @@ import {
 	Plane,
 	Presentation,
 	Sprout,
-	Sunrise,
 	TrendingUp,
 	Users,
 } from "lucide-react";
@@ -26,54 +25,48 @@ const itinerary = [
 		title: "Arrival and Deep Reset",
 		schedule: [
 			{
-				time: "12:00 – 2:00 PM",
-				event: "Guest Arrival, Concierge Check-in & Welcome Refreshments",
+				time: "12:00 – 3:00 PM",
+				event: "Guest Arrival, Concierge Check-in & Settle into rooms/Rest",
 				description: "",
 				Icon: ConciergeBell,
 			},
 			{
-				time: "12:30 – 2:30 PM",
+				time: "3:00 – 4:30 PM",
 				event: "Executive Welcome Lunch",
 				description: "",
 				Icon: ConciergeBell,
 			},
 			{
-				time: "2:30 – 4:00 PM",
-				event: "Check-in, Settle into Rooms & Leisure Time",
-				description: "",
-				Icon: Plane,
-			},
-			{
-				time: "4:00 – 5:00 PM",
+				time: "4:30 – 5:30 PM",
 				event:
 					"Welcome Circle: The Beginning of the Escape (Introductions, Retreat Intentions & Community Agreements)",
 				description: "",
 				Icon: Users,
 			},
 			{
-				time: "5:00 – 5:30 PM",
-				event: "Sunset Tea & Quiet Reflection",
+				time: "5:30 – 7:00 PM",
+				event:
+					"Fireside Welcome Conversation: Why Great Leaders Must Learn to Pause",
 				description: "",
-				Icon: Sunrise,
+				Icon: Flame,
 			},
 			{
-				time: "5:30 – 6:30 PM",
+				time: "7:00 – 7:30 PM",
+				event: "Evening Tea / Executive Welcome Dinner",
+				description: "",
+				Icon: ConciergeBell,
+			},
+			{
+				time: "7:30 – 8:00 PM",
 				event: "Gentle Stretching, Breathwork & Guided Mindfulness",
 				description: "",
 				Icon: Activity,
 			},
 			{
-				time: "7:00 – 9:00 PM",
-				event: "Executive Welcome Dinner",
+				time: "8:00 – 9:00 PM",
+				event: "Personal Reflection/Journaling/Rest",
 				description: "",
-				Icon: ConciergeBell,
-			},
-			{
-				time: "9:00 – 9:45 PM",
-				event:
-					"Fireside Welcome Conversation: Why Great Leaders Must Learn to Pause",
-				description: "",
-				Icon: Flame,
+				Icon: Leaf,
 			},
 		],
 	},
@@ -84,9 +77,8 @@ const itinerary = [
 		title: "Leading Yourself",
 		schedule: [
 			{
-				time: "6:30 – 7:45 AM",
-				event:
-					"Sunrise Wellness Session ( Mobility, Stretching and Breathwork)",
+				time: "7:00 – 7:45 AM",
+				event: "Sunrise Wellness Session (Mobility, Stretching & Breathwork)",
 				description: "",
 				Icon: Activity,
 			},
@@ -97,7 +89,7 @@ const itinerary = [
 				Icon: ConciergeBell,
 			},
 			{
-				time: "9:15 – 10:45 AM",
+				time: "9:45 – 10:45 AM",
 				event: "Leadership Masterclass 1: Future-Proofing Your Vision",
 				description: "",
 				Icon: Presentation,
@@ -109,53 +101,47 @@ const itinerary = [
 				Icon: Users,
 			},
 			{
-				time: "11:15 AM – 12:30 PM",
+				time: "11:15 AM – 1:15 PM",
 				event: "Leadership Masterclass 2: Leading Without Burning Out",
 				description: "",
 				Icon: Presentation,
 			},
 			{
-				time: "12:30 – 2:00 PM",
-				event: "Executive Networking Luncheon – Conversations That Matter",
+				time: "1:15 – 1:45 PM",
+				event: "Tea Break/ Executive Games",
 				description: "",
-				Icon: MessageSquare,
+				Icon: ConciergeBell,
 			},
 			{
-				time: "2:00 – 3:30 PM",
+				time: "1:45 – 3:00 PM",
+				event: "Executive Lunch Break",
+				description: "",
+				Icon: ConciergeBell,
+			},
+			{
+				time: "3:00 – 4:00 PM",
+				event:
+					"Leadership Masterclass 3: Building Organizations That Outlive You",
+				description: "",
+				Icon: Presentation,
+			},
+			{
+				time: "4:00 – 5:30 PM",
 				event: "The Clarity Walk & Guided Reflection Journaling",
 				description: "",
 				Icon: Sprout,
 			},
 			{
-				time: "3:30 – 4:00 PM",
-				event: "Tea Break",
-				description: "",
-				Icon: ConciergeBell,
-			},
-			{
-				time: "4:00 – 5:30 PM",
-				event:
-					"Fireside Conversation: What Leadership Has Cost Me—and What It Has Given Me",
-				description: "",
-				Icon: Flame,
-			},
-			{
 				time: "5:30 – 7:00 PM",
-				event: "Curated Dinner",
+				event: "Curated Executive Dinner",
 				description: "",
 				Icon: ConciergeBell,
 			},
 			{
 				time: "7:00 – 9:00 PM",
-				event: "Free time( Spa, swimming, reading, quiet reflection and rest)",
+				event: "Free Time (Spa, Swimming, Reading) / Quiet Reflection & Rest",
 				description: "",
 				Icon: Activity,
-			},
-			{
-				time: "9:00 PM",
-				event: "Quiet Reflection & Rest",
-				description: "",
-				Icon: Leaf,
 			},
 		],
 	},
@@ -166,16 +152,10 @@ const itinerary = [
 		title: "Discover. Connect. Celebrate.",
 		schedule: [
 			{
-				time: "6:30 – 7:30 AM",
+				time: "7:00 – 7:45 AM",
 				event: "Morning Nature Walk, Body Movement & Stretching",
 				description: "",
 				Icon: Leaf,
-			},
-			{
-				time: "7:30 – 8:00 AM",
-				event: "Mindfulness & Gratitude Session",
-				description: "",
-				Icon: Sprout,
 			},
 			{
 				time: "8:00 – 9:00 AM",
@@ -184,32 +164,33 @@ const itinerary = [
 				Icon: ConciergeBell,
 			},
 			{
-				time: "9:00 AM – 3:00 PM",
+				time: "9:30 AM – 3:30 PM",
 				event: "Curated Tour & Cultural Experience (Including Lunch)",
 				description: "",
 				Icon: Plane,
 			},
 			{
-				time: "3:00 – 4:00 PM",
+				time: "3:30 – 4:00 PM",
 				event: "Return to Resort & Leisure Time",
 				description: "",
 				Icon: Activity,
 			},
 			{
 				time: "4:00 – 5:00 PM",
-				event: "Wellness Lounge (Massage, Tea Bar)",
+				event:
+					"Wellness Lounge (Massage)/ Mindfulness & Personal Gratitude Session",
 				description: "",
 				Icon: Leaf,
 			},
 			{
-				time: "5:30 – 6:45 PM",
+				time: "5:30 – 6:30 PM",
 				event:
-					"Leadership Masterclass 3: Building Organizations That Outlive You",
+					"Fireside Conversation: Building a Leadership Legacy Beyond Success",
 				description: "",
 				Icon: Flame,
 			},
 			{
-				time: "7:45 – 10 PM",
+				time: "7:30 – 10:30 PM",
 				event:
 					"The Legacy Gala – Red Carpet Reception, Fine Dining, Live Entertainment, Leadership Recognition & Celebration",
 				description: "",
@@ -224,16 +205,10 @@ const itinerary = [
 		title: "Return with Purpose",
 		schedule: [
 			{
-				time: "6:30 – 7:15 AM",
+				time: "7:00 – 7:45 AM",
 				event: "Dance Aerobics",
 				description: "",
 				Icon: Activity,
-			},
-			{
-				time: "7:15 – 7:45 AM",
-				event: "Reflection Walk",
-				description: "",
-				Icon: Leaf,
 			},
 			{
 				time: "8:00 – 9:00 AM",
@@ -242,20 +217,20 @@ const itinerary = [
 				Icon: ConciergeBell,
 			},
 			{
-				time: "9:15 – 10:45 AM",
+				time: "9:30 – 10:30 AM",
 				event:
-					"Fireside Conversation: Building a Leadership Legacy Beyond Success",
+					"Fireside Conversation: What Leadership Has Cost Me and What It Has Given Me",
 				description: "",
-				Icon: Presentation,
+				Icon: Flame,
 			},
 			{
-				time: "10:45 – 11:15 AM",
-				event: "Coffee Break",
+				time: "10:30 – 11:00 AM",
+				event: "Tea Break",
 				description: "",
-				Icon: Users,
+				Icon: ConciergeBell,
 			},
 			{
-				time: "11:15 AM – 12:30 PM",
+				time: "11:00 AM – 12:30 PM",
 				event:
 					"Executive Action Planning Workshop: My 90-Day Leadership Blueprint",
 				description: "",
@@ -263,15 +238,16 @@ const itinerary = [
 			},
 			{
 				time: "12:30 – 1:30 PM",
-				event: "Farewell Lunch",
-				description: "",
-				Icon: ConciergeBell,
-			},
-			{
-				time: "1:30 – 2:30 PM",
 				event: "Leadership Commitment Ceremony & Letters to My Future Self",
 				description: "",
 				Icon: CheckCircle,
+			},
+			{
+				time: "1:30 – 2:30 PM",
+				event:
+					"Executive Networking/ Farewell Luncheon – Conversations That Matter",
+				description: "",
+				Icon: MessageSquare,
 			},
 			{
 				time: "2:30 – 3:00 PM",
