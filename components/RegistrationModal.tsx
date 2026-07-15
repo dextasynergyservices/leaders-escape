@@ -22,6 +22,7 @@ export default function RegistrationModal({
 	const [occupancyTab, setOccupancyTab] = useState<"single" | "shared">(
 		"single",
 	);
+	const [iframeLoading, setIframeLoading] = useState(true);
 
 	const handleCopy = async () => {
 		try {
@@ -39,6 +40,7 @@ export default function RegistrationModal({
 			setStep("details");
 			setIsClosing(false);
 			setIsProcessing(false);
+			setIframeLoading(true);
 		}
 	}
 
@@ -135,7 +137,17 @@ export default function RegistrationModal({
 				{/* Content Area - Scrollable */}
 				<div className="flex-1 overflow-y-auto px-6 md:px-10 py-6 md:py-8 custom-scrollbar">
 					{step === "details" && (
-						<div className="flex flex-col gap-5 h-[500px]">
+						<div className="flex flex-col gap-5 h-[500px] relative">
+							{iframeLoading && (
+								<div className="absolute inset-0 flex items-center justify-center bg-gray-50 rounded-xl z-10">
+									<div className="flex flex-col items-center gap-3">
+										<div className="w-8 h-8 border-4 border-[#E0672A]/30 border-t-[#E0672A] rounded-full animate-spin" />
+										<span className="text-sm font-medium text-[#0D4D55] animate-pulse">
+											Loading secure form...
+										</span>
+									</div>
+								</div>
+							)}
 							<iframe
 								title="Registration Form"
 								src="https://docs.google.com/forms/d/e/1FAIpQLSdXMlLtPaswzpsejDzjmP6hW5RyuIvU-BuznNub3gGJrGDdcA/viewform?embedded=true"
@@ -144,7 +156,8 @@ export default function RegistrationModal({
 								frameBorder="0"
 								marginHeight={0}
 								marginWidth={0}
-								className="rounded-xl bg-gray-50"
+								onLoad={() => setIframeLoading(false)}
+								className={`rounded-xl bg-gray-50 transition-opacity duration-300 ${iframeLoading ? "opacity-0" : "opacity-100"}`}
 							>
 								Loading...
 							</iframe>

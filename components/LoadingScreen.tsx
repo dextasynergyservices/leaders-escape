@@ -41,6 +41,7 @@ export default function LoadingScreen() {
 						src="https://res.cloudinary.com/dxoorukfj/image/upload/v1783673966/LEADERS_ESCAPE_LOGO_2_hoeq4i.png"
 						alt="Leaders Escape Logo"
 						fill
+						sizes="(max-width: 768px) 192px, 256px"
 						className="object-contain"
 						priority
 					/>

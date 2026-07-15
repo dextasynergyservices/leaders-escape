@@ -54,6 +54,7 @@ export default function Hero({ onRegister }: HeroProps) {
 									src="https://res.cloudinary.com/dxoorukfj/image/upload/v1783673966/LEADERS_ESCAPE_LOGO_2_hoeq4i.png"
 									alt="Leaders Escape Logo"
 									fill
+									sizes="(max-width: 768px) 128px, 192px"
 									className="object-contain"
 									priority
 								/>
