@@ -219,8 +219,8 @@ export default function RegistrationModal({
 									<a
 										href={
 											occupancyTab === "single"
-												? "https://mainstack.store/"
-												: "https://mainstack.store/"
+												? "https://mainstack.com/p/leaders-escape-retreat1"
+												: "https://mainstack.com/p/leaders-escape-retreat1"
 										}
 										target="_blank"
 										rel="noopener noreferrer"
